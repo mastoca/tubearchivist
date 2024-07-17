@@ -41,7 +41,7 @@ Once your YouTube video collection grows, it becomes hard to search and find a s
 For minimal system requirements, the Tube Archivist stack needs around 2GB of available memory for a small testing setup and around 4GB of available memory for a mid to large sized installation. Minimal with dual core with 4 threads, better quad core plus. 
 This project requires docker. Ensure it is installed and running on your system.  
 
-The documentation has additional user provided instructions for [Unraid](https://docs.tubearchivist.com/installation/unraid/), [Synology](https://docs.tubearchivist.com/installation/synology/), [Podman](https://docs.tubearchivist.com/installation/podman/) and [True NAS](https://docs.tubearchivist.com/installation/truenas-scale/).
+The documentation has additional user provided instructions for [Unraid](https://docs.tubearchivist.com/installation/unraid/), [Synology](https://docs.tubearchivist.com/installation/synology/) and [Podman](https://docs.tubearchivist.com/installation/podman/).
 
 The instructions here should get you up and running quickly, for Docker beginners and full explanation about each environment variable, see the [docs](https://docs.tubearchivist.com/installation/docker-compose/).
 
@@ -148,7 +148,6 @@ This can happen if you have nested virtualizations, e.g. LXC running Docker in P
 ## Roadmap
 We have come far, nonetheless we are not short of ideas on how to improve and extend this project. Issues waiting for you to be tackled in no particular order:
 
-- [ ] User roles
 - [ ] Audio download
 - [ ] Podcast mode to serve channel as mp3
 - [ ] Random and repeat controls ([#108](https://github.com/tubearchivist/tubearchivist/issues/108), [#220](https://github.com/tubearchivist/tubearchivist/issues/220))
@@ -162,7 +161,9 @@ We have come far, nonetheless we are not short of ideas on how to improve and ex
 - [ ] Configure shorts, streams and video sizes per channel
 
 Implemented:
+- [X] Per user videos/channel/playlists [2024-07-15]
 - [X] User created playlists [2024-04-10]
+- [X] User roles, aka read only user [2023-11-10]
 - [X] Add statistics of index [2023-09-03]
 - [X] Implement [Apprise](https://github.com/caronc/apprise) for notifications [2023-08-05]
 - [X] Download video comments [2022-11-30]
